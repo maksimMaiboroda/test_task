@@ -1,0 +1,66 @@
+.cardStyle {
+  margin: 10px 30px;
+}
+
+.card {
+  background-color: #282727;
+  border: none;
+  color: #aaa;
+  font-family: "DINCond Regular", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.cardContentLeft {
+  width: 55%;
+  border-right: 2px solid #e5d01d;
+}
+
+.cardContentRight {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.cardTextContent {
+  padding: 20px;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.titleBek {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  font-size: 1em;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.otherDesc {
+  font-size: 1.2em;
+}
+
+.desc {
+  font-size: 1em;
+}
