@@ -1,0 +1,39 @@
+.searchForm {
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+}
+
+.randomOrNot {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.searchLabel {
+  border: 1px solid #e5d01d;
+  border-radius: 10px;
+
+  width: 100%;
+  background: #333;
+}
+.searchLabel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchLabel span{
+  margin-left: 10px;
+}
+
+
+.searchInput {
+  border: none;
+  width: 100%;
+  height: 42px;
+  padding: 0 15px;
+  outline: none;
+  background: none;
+}

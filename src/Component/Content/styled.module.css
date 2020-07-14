@@ -1,0 +1,55 @@
+.wrapper {
+  background: url(../../assets/img/background.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.searchAndSort {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333;
+  
+}
+
+.sortBtn {
+  border: 1px solid #e5d01d;
+  border-radius: 10px;
+  margin-left: 20px;
+  background: #e5d01d;
+  height: 42px;
+  padding: 0 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.sortBtn:hover {
+  background: #333;
+  color: white;
+  transition: background 0.1s;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.minHeight {
+  min-height: 100vh;
+}
+
+.cardStyle {
+  margin: 10px;
+}
+
+.title {
+  color: #333;
+  font-weight: normal;
+}
