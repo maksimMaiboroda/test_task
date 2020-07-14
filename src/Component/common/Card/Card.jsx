@@ -63,8 +63,7 @@ const CardComponent = ({ film, filmsPath }) => {
             <div className={classes.otherDesc}>
               <div className={classes.subTitle}>starships: </div>
               <span>
-                CR90 corvette, Star Destroyer, Sentinel-class landing craft,
-                Death Star, Millennium Falcon,Y-wing, X-wing
+                CR90 corvette, Star Destroyer, Sentinel-class landing craft
               </span>
             </div>
           </div>

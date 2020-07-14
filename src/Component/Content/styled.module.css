@@ -15,7 +15,6 @@
   font-size: 18px;
   line-height: 26px;
   color: #333;
-  
 }
 
 .sortBtn {
@@ -52,4 +51,8 @@
 .title {
   color: #333;
   font-weight: normal;
+}
+
+.desc {
+  font-size: 1.1em;
 }

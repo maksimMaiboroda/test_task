@@ -1,5 +1,4 @@
 import { ADD_FILMS, ADD_SEARCH_TEXT, SET_FILTER } from "../types/types";
-import filmsAPI from "../../api/api";
 
 const addJokeToList = (films) => ({
   type: ADD_FILMS,
@@ -16,16 +15,32 @@ export const setFilter = (filterBy) => ({
   payload: filterBy,
 });
 
-export const getFilms = (text) => {
-  return async (dispatch) => {
-    let data = await filmsAPI.getFilms();
-    dispatch(addJokeToList(data));
+
+export const getFilms = () => {
+  return  (dispatch) => {
+    fetch('https://cors-anywhere.herokuapp.com/https://swapi.dev/api/films')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        dispatch(addJokeToList(data.results));
+      });
   };
 };
 
+
+
+
+
 export const searchFilms = (text) => {
   return async (dispatch) => {
-    let data = await filmsAPI.search(text);
-    dispatch(addJokeToList(data));
+    fetch(`https://cors-anywhere.herokuapp.com/https://swapi.dev/api/films/?search=${text}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        dispatch(addJokeToList(data.results));
+      });
   };
 };
+
