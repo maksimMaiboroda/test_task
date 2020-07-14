@@ -1,6 +1,7 @@
 import * as axios from "axios";
 
 const instanse = axios.create({
+  withCredentials: true,
   baseURL: `https://swapi.dev/api/`,
 });
 
